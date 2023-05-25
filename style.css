@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+main{
+
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.linear__background{
+    width: 30%;
+    height: 100%;
+    background-image: url(./Assets/bg-main-desktop.png);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.linear__image{
+    display: none;
+}
+.card__front__con{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 18%;
+    right: -20%;
+    position: relative;
+}
+
+.big__circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    z-index: 5;
+}
+.small__circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1.5px solid white;
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    z-index: 5;
+}
+
+.zero{
+    font-family: 'poppins';
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 5;
+}
+
+.card__name{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    z-index: 5;
+}
+
+.card__date{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    z-index: 5;
+}
+.card__back__con{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    position: absolute;
+    top: 52%;
+    right: -40%;
+}
+.card__number{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    right: 12%;
+    z-index: 5;
+}
+
+.card__front__con img{
+    width: 100%;
+    height: 100%;
+}
+.card__back__con img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.form__con{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+}
+.form__con input{
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+::placeholder{
+    font-size: 12px;
+    padding-left: 15px;
+    color: rgba(128, 128, 128, 0.426);
+}
+.form__con input:focus{
+    border: 1px solid #220930;
+}
+
+form{
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding-top: 60px;
+
+}
+form .name{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.name label{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #220930;
+}
+
+.name input{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.386);
+    stroke: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+
+form .number{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.number label{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #220930;
+}
+
+.number input{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.386);
+    stroke: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+.date__con{
+    width: 100%;
+    height: 20%;
+    margin-top: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.date__con .date{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.date label{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    color: #220930;
+}
+
+.date input{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.386);
+    stroke: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+
+.date__con .month{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.month label{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 20px;
+    color: #220930;
+}
+
+.month input{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.386);
+    stroke: none;
+    outline: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.date__con .cvc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.cvc label{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #220930;
+}
+
+.cvc input{
+    margin-left: 20px;
+    width: 112px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.386);
+    stroke: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+form button{
+    padding: 0;
+    width: 370px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: white;
+    background-color: #220930;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    stroke: none;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: white;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1027px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    
+    main{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+        
+    }
+
+    .linear__background{
+        width: 100%;
+        height: 40%;
+        padding: 0;
+        margin: 0;
+        background-image: none;
+        position: relative;
+
+    }
+    .linear__image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .card__back__con{
+        width: 550px;
+        height: 300px;
+        position: absolute;
+        top: 10%;
+        right: 7%;
+        z-index: 3;
+    }
+    .card__front__con{
+        width: 550px;
+        height: 300px;
+        top: -55%;
+        left: 6%;
+        z-index: 4;
+    }
+
+    .big__circle{
+        width: 70px;
+        height: 70px;
+    }
+    .small__circle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .zero{
+        font-size: 40px;
+    }
+    .card__date{
+        font-size: 20px;
+    }
+    .card__name{
+        font-size: 20px;
+    }
+    .card__number{
+        font-size: 20px;
+    }
+    .form__con{
+        width: 100%;
+        height: 60%;
+        padding: 0;
+        align-items: flex-end;
+        margin: 0;
+        background-color: white;
+    }
+    form{
+        width: 90%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    ::placeholder{
+        font-size: 20px;
+    }
+    .name{
+        margin-top: 30px;
+    }
+    .name label{
+        font-size: 22px;
+    }
+    .number label{
+        font-size: 22px;
+    }
+    .date__con label{
+        font-size: 22px;
+    }
+    form .name{
+        height: 23%;
+    }
+    .name input{
+        width: 90%;
+        height: 50px;
+    }
+
+    form .number{
+        height: 23%;
+    }
+    .number input{
+        width: 90%;
+        height: 50px;
+    }
+    .date__con{
+        height: 23%;
+    }
+    .date__con label{
+        font-size: 22px;
+    }
+    .date input{
+        height: 50px;
+        width: 150px;
+    }
+    .month input{
+        height: 50px;
+        width: 150px;
+    }
+    .cvc input{
+        height: 50px;
+        width: 250px;
+    }
+    form button{
+        width: 95%;
+        height: 70px;
+        border-radius: 10px;
+    }
+    button a{
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:767px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        margin: 0;
+        padding: 0;
+
+        
+    }
+
+    .linear__background{
+        width: 100%;
+        height: 30%;
+        padding: 0;
+        margin: 0;
+        background-image: none;
+        position: relative;
+
+    }
+    .linear__image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .card__back__con{
+        width: 290px;
+        height: 160px;
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        z-index: 3;
+    }
+    .card__front__con{
+        width: 290px;
+        height: 160px;
+        top: -49%;
+        left: 5%;
+        z-index: 4;
+    }
+
+    .big__circle{
+        width: 70px;
+        height: 70px;
+    }
+    .small__circle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .zero{
+        font-size: 40px;
+    }
+    .card__date{
+        font-size: 20px;
+    }
+    .card__name{
+        font-size: 20px;
+    }
+    .card__number{
+        font-size: 20px;
+    }
+    .form__con{
+        width: 100%;
+        height: 60%;
+        padding: 0;
+        padding-top: 40px;
+        align-items: flex-start;
+        margin: 0;
+        background-color: white;
+    }
+    form{
+        width: 90%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    ::placeholder{
+        font-size: 20px;
+    }
+    .name{
+        margin-top: 30px;
+    }
+    .name label{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .number label{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .date__con label{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    form .name{
+        height: 23%;
+    }
+    .name input{
+        width: 320px;
+        height: 50px;
+    }
+
+    form .number{
+        height: 23%;
+    }
+    .number input{
+        width: 320px;
+        height: 50px;
+    }
+    .date__con{
+        height: 23%;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .date__con label{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .date input{
+        height: 40px;
+        width: 70px;
+    }
+    .month input{
+        height: 40px;
+        width: 70px;
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    .cvc input{
+        height: 40px;
+        width: 130px;
+        margin-left: 5px;
+    }
+    form button{
+        width: 340px;
+        height: 55px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    button a{
+        font-size: 20px;
+    }
+
+}
+
+
+
+

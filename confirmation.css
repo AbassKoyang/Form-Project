@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+main{
+
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.linear__background{
+    width: 30%;
+    height: 100%;
+    background-image: url(./Assets/bg-main-desktop.png);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.linear__image{
+    display: none;
+}
+.card__front__con{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 18%;
+    right: -20%;
+    position: relative;
+}
+
+.big__circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    z-index: 5;
+}
+.small__circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1.5px solid white;
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    z-index: 5;
+}
+
+.zero{
+    font-family: 'poppins';
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 5;
+}
+
+.card__name{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    z-index: 5;
+}
+
+.card__date{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    z-index: 5;
+}
+.card__back__con{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    position: absolute;
+    top: 52%;
+    right: -40%;
+}
+.card__number{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    right: 12%;
+    z-index: 5;
+}
+
+.card__front__con img{
+    width: 100%;
+    height: 100%;
+}
+.card__back__con img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.alert__con{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+}
+.alert img{
+    width: 80px;
+}
+.alert h2{
+    font-family: 'poppins';
+    margin-bottom: 0;
+    color: #220930;
+}
+.alert p {
+    font-family: 'poppins';
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+.alert button{
+    padding: 0;
+    width: 370px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'poppins';
+    font-weight: 400;
+    color: white;
+    background-color: #220930;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    stroke: none;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: white;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1027px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    
+    main{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+        
+    }
+
+    .linear__background{
+        width: 100%;
+        height: 40%;
+        padding: 0;
+        margin: 0;
+        background-image: none;
+        position: relative;
+
+    }
+    .linear__image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .card__back__con{
+        width: 550px;
+        height: 300px;
+        position: absolute;
+        top: 10%;
+        right: 7%;
+        z-index: 3;
+    }
+    .card__front__con{
+        width: 550px;
+        height: 300px;
+        top: -55%;
+        left: 6%;
+        z-index: 4;
+    }
+
+    .big__circle{
+        width: 70px;
+        height: 70px;
+    }
+    .small__circle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .zero{
+        font-size: 40px;
+    }
+    .card__date{
+        font-size: 20px;
+    }
+    .card__name{
+        font-size: 20px;
+    }
+    .card__number{
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+    .alert__con{
+        background-color: white;
+        justify-content: flex-end;
+        height: 70%;
+    }
+
+    .alert{
+        background-color: white;
+        width: 100%;
+        height: 80%;
+        justify-content: flex-end;
+        padding-bottom: 0px;
+    }
+
+    .alert img{
+        width: 180px;
+        margin-bottom: 0px;
+    }
+    .alert h2{
+        font-family: 'poppins';
+        margin-bottom: 0;
+        margin-top: 20px;
+        color: #220930;
+        font-size: 60px;
+    }
+    .alert p {
+        font-family: 'poppins';
+        margin: 0;
+        margin-top: 10px;
+        font-size: 28px;
+    }
+    .alert button{
+        height: 70px;
+        width: 500px;
+        border-radius: 10px;
+    }
+    button a{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:767px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        margin: 0;
+        padding: 0;
+
+        
+    }
+
+    .linear__background{
+        width: 100%;
+        height: 30%;
+        padding: 0;
+        margin: 0;
+        background-image: none;
+        position: relative;
+
+    }
+    .linear__image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .card__back__con{
+        width: 290px;
+        height: 160px;
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        z-index: 3;
+    }
+    .card__front__con{
+        width: 290px;
+        height: 160px;
+        top: -49%;
+        left: 5%;
+        z-index: 4;
+    }
+
+    .big__circle{
+        width: 70px;
+        height: 70px;
+    }
+    .small__circle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .zero{
+        font-size: 40px;
+    }
+    .card__date{
+        font-size: 20px;
+    }
+    .card__name{
+        font-size: 20px;
+    }
+    .card__number{
+        font-size: 20px;
+    }
+
+    .alert__con{
+        background-color: white;
+        justify-content: flex-end;
+        height: 70%;
+        width: 100%;
+    }
+
+    .alert{
+        background-color: white;
+        width: 100%;
+        height: 80%;
+        justify-content: flex-end;
+        padding-bottom: 5%;
+    }
+
+    .alert img{
+        width: 110px;
+        margin-bottom: 0px;
+    }
+    .alert h2{
+        font-family: 'poppins';
+        margin-bottom: 0;
+        margin-top: 20px;
+        color: #220930;
+        font-size: 35px;
+    }
+    .alert p {
+        font-family: 'poppins';
+        margin: 0;
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    .alert button{
+        height: 55px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    button a{
+        font-size: 18px;
+    }
+}
+
