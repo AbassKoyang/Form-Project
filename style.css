@@ -611,13 +611,14 @@ button a{
         height: 60%;
         padding: 0;
         padding-top: 40px;
+        padding-left: 20px;
         align-items: flex-start;
         margin: 0;
         background-color: white;
     }
     form{
-        width: 90%;
-        height: 80%;
+        width: 95%;
+        height: 75%;
         margin: 0;
         padding: 0;
         background-color: white;
