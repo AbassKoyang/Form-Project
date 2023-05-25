@@ -524,7 +524,7 @@ button a{
         padding: 0;
         box-sizing: border-box;
         width: 100vw;
-        height: 100vh;
+        height: 900px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -598,13 +598,13 @@ button a{
         font-size: 40px;
     }
     .card__date{
-        font-size: 20px;
+        font-size: 17px;
     }
     .card__name{
-        font-size: 20px;
+        font-size: 17px;
     }
     .card__number{
-        font-size: 20px;
+        font-size: 17px;
     }
     .form__con{
         width: 100%;
@@ -624,21 +624,21 @@ button a{
     }
 
     ::placeholder{
-        font-size: 20px;
+        font-size: 14px;
     }
     .name{
         margin-top: 30px;
     }
     .name label{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 0;
     }
     .number label{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 0;
     }
     .date__con label{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 0;
     }
     form .name{
@@ -662,7 +662,7 @@ button a{
         align-items: flex-end;
     }
     .date__con label{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 5px;
     }
     .date input{
